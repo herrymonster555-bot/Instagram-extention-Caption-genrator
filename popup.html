@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Instagram Creator Toolkit</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main class="app">
+    <header class="top">
+      <div class="logo">✦</div>
+      <div><h1>Creator Toolkit</h1><p>Instagram • Creator tools</p></div>
+      <span class="version">BETA</span>
+    </header>
+
+    <section class="panel">
+      <label for="topic">What's your Reel or post about?</label>
+      <textarea id="topic" rows="2" placeholder="e.g. cinematic Naruto edit, Roblox funny moments, travel vlog"></textarea>
+      <div class="fields">
+        <div><label for="language">Language</label><select id="language"><option value="hinglish">Hinglish</option><option value="english">English</option><option value="hindi">Hindi</option></select></div>
+        <div><label for="tone">Style</label><select id="tone"><option value="cinematic">Cinematic</option><option value="funny">Funny</option><option value="aesthetic">Aesthetic</option><option value="gaming">Gaming</option><option value="educational">Educational</option><option value="minimal">Minimal</option></select></div>
+      </div>
+      <button id="generate" class="primary">✦ Generate content</button>
+      <p class="hint">Free templates • No API key • Edit before posting</p>
+    </section>
+
+
+    <section class="panel trend-panel">
+      <div class="download-title"><div><h2>Trending topic ideas · India</h2><p>Current Google Search trends</p></div><span class="download-icon">↗</span></div>
+      <button id="loadTrends" class="secondary">↻ Load current trends</button>
+      <div id="trends" class="videos"><p class="muted">Internet required. These are search trends, not guaranteed Instagram trends.</p></div>
+      <p class="fineprint">Click a trend to put it into your topic box, then generate your caption and related hashtags.</p>
+    </section>
+
+    <section class="results">
+      <div class="result-head"><h2>Ready to post</h2><span id="status" aria-live="polite">Add a topic to begin</span></div>
+      <article class="output"><div class="out-title"><label for="caption">Caption</label><button data-copy="caption" class="copy">Copy</button></div><textarea id="caption" rows="3" placeholder="Your caption will appear here…"></textarea></article>
+      <article class="output"><div class="out-title"><label for="hashtags">Hashtags</label><button data-copy="hashtags" class="copy">Copy</button></div><textarea id="hashtags" rows="3" placeholder="#YourHashtags"></textarea></article>
+      <article class="output"><div class="out-title"><label for="keywords">Keywords</label><button data-copy="keywords" class="copy">Copy</button></div><textarea id="keywords" rows="2" placeholder="Search-friendly keywords"></textarea></article>
+      <article class="output"><div class="out-title"><label for="description">Description</label><button data-copy="description" class="copy">Copy</button></div><textarea id="description" rows="2" placeholder="Short post description"></textarea></article>
+      <button id="copyAll" class="secondary">Copy all content</button>
+    </section>
+
+    <footer>Made for creators <span>•</span> Local template engine</footer>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>

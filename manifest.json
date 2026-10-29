@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Instagram Creator Toolkit",
+  "version": "1.3.0",
+  "description": "Generate topic-matched Instagram captions, hashtags, keywords and descriptions with optional India trend ideas.",
+  "permissions": [],
+  "host_permissions": [
+    "https://trends.google.com/*"
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_title": "Instagram Creator Toolkit",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png"
+    }
+  }
+}
